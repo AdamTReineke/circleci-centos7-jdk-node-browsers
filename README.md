@@ -1,6 +1,6 @@
 # CircleCI 2.0 build image based on CentOS with
 
- - JDK 8
+ - JDK 11
  - Maven
  - Make
  - Node 12.18.4
