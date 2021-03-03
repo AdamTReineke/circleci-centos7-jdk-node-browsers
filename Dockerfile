@@ -15,8 +15,8 @@ RUN yum install -y git tar curl wget sudo make yum-utils device-mapper-persisten
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 # Use Java 11
-ENV JAVA_HOME /etc/alternatives/jre_11_openjdk/bin
-ENV PATH $JAVA_HOME:$PATH
+ENV JAVA_HOME /etc/alternatives/jre_11_openjdk
+ENV PATH $JAVA_HOME/bin:$PATH
 
 # Install chrome and chromedriver
 RUN yum install -y xorg-x11-server-Xvfb unzip zip
